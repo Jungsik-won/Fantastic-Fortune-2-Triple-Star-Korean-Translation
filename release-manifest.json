@@ -1,20 +1,20 @@
 {
   "game": "Fantastic Fortune 2: Triple Star",
   "disc_id": "SLPS-25396",
-  "version": "v0.9.2",
+  "version": "v0.9.3",
   "source_size": 3231907840,
   "source_sha256": "a92f19c3402592aaabd0f1c4fdd67a839c32cde5cd133e861c16bacca8322ac7",
-  "patched_iso_sha256": "e32176c41b3e1979e470c19c6b95f335c60d119f08474f6de33e24ad51565b0c",
+  "patched_iso_sha256": "76eaa41b996e4055f0bb23efb0f5e3e8274096a5b09b5967bd290807b14d532b",
   "assets": [
     {
-      "name": "ff2-ko-full-reviewed-v092-package.zip",
-      "size": 8638174,
-      "sha256": "0fa2ad6fee791797ac6a4d085c2fd70d7c95995d8220ee617234209ca1b28c93"
+      "name": "ff2-ko-full-reviewed-v093-package.zip",
+      "size": 9108863,
+      "sha256": "3b218cb6fdcf6c6c4953738aa57cf06ec8b9e428cc8eae22446c67dad0eeb9de"
     },
     {
-      "name": "ff2-ko-full-reviewed-v092.ff2patch.gz",
-      "size": 8715343,
-      "sha256": "3522dde23be7c08a234e881eed5d42d9b82bccc370eb70aa9f987bad9be02b8b"
+      "name": "ff2-ko-full-reviewed-v093.ff2patch.gz",
+      "size": 9179171,
+      "sha256": "6e6ce3daf7f9b769c71494cf61f2ff0223de38f2ffcd25d852a4d5cf4ea38309"
     }
   ],
   "localization": {
@@ -26,7 +26,7 @@
   },
   "validation": {
     "string_qa_errors": 0,
-    "regression_tests_passed": 40,
+    "regression_tests_passed": 47,
     "runtime_memory_checks_passed": 8,
     "emulator": "PCSX2 2.6.3 macOS",
     "runtime_dialogues_advanced": 22,
@@ -37,10 +37,14 @@
     "character_select_cards_runtime_verified": true,
     "character_select_runtime": "Fresh v0.9.1 boot: three expanded and three collapsed cards, PCSX2 2.6.3 macOS.",
     "weekday_runtime_verified": false,
-    "weekday_runtime_note": "User will verify the date badge during normal progression; no date-scene runtime verification claimed."
+    "weekday_runtime_note": "User will verify the date badge during normal progression; no date-scene runtime verification claimed.",
+    "graphics_runtime_verified": false,
+    "graphics_runtime_note": "Resource previews and invariants verified; schedule/date/profile long-progression screens await user verification."
   },
   "changes": [
-    "Fixed all 217 weekday labels on 31 date atlases: limit drawing to the original 64-entry runtime palette, eliminate opaque fringes at the transparency key, increase type size and restore gold/dark-outline styling.",
-    "Date numerals, sprite coordinates, resource layout and existing v0.9.1 selection card improvements preserved."
-  ]
+    "Replace flat image text backings with native rounded pill bars, parchment grain, transparent glyphs and restored patterned panels.",
+    "Correct Unisys profile column, calendar duplicate month label and weekday centering, lesson arrows, prologue/epilogue rows, and caption/date tail bounds.",
+    "Preserve v0.9 reviewed dialogue and v0.9.2 64-color weekday fix."
+  ],
+  "patch_hunks": 100507
 }

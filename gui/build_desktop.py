@@ -13,10 +13,10 @@ import zipfile
 ROOT=Path(__file__).resolve().parents[1]
 GUI=ROOT/'gui'
 NAME='FF2-Korean-Patcher'
-PATCH='ff2-ko-full-reviewed-v092.ff2patch.gz'
-DIGEST='3522dde23be7c08a234e881eed5d42d9b82bccc370eb70aa9f987bad9be02b8b'
-URL='https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/download/v0.9.2/'+PATCH
-README='''판타스틱 포츈 2: 트리플 스타 한글 검수판 v0.9.2 / GUI 1.2
+PATCH='ff2-ko-full-reviewed-v093.ff2patch.gz'
+DIGEST='6e6ce3daf7f9b769c71494cf61f2ff0223de38f2ffcd25d852a4d5cf4ea38309'
+URL='https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/download/v0.9.3/'+PATCH
+README='''판타스틱 포츈 2: 트리플 스타 한글 검수판 v0.9.3 / GUI 1.3
 
 1. 꾸러미를 압축 해제하고 FF2-Korean-Patcher 앱 또는 실행 파일을 엽니다.
 2. ‘원본 ISO 선택 → 자동 패치’를 누르고 일본판 SLPS-25396 원본 ISO를 고릅니다.
@@ -25,7 +25,7 @@ README='''판타스틱 포츈 2: 트리플 스타 한글 검수판 v0.9.2 / GUI 
 
 Python 설치와 명령어 입력, 별도의 패치 파일 선택이 필요하지 않습니다.
 패치는 앱에 포함돼 있으며 모든 ISO 작업은 로컬에서 진행됩니다.
-원본과 같은 폴더에 ‘원본 이름 (Korean v0.9.2).iso’를 저장합니다.
+원본과 같은 폴더에 ‘원본 이름 (Korean v0.9.3).iso’를 저장합니다.
 같은 이름이 있으면 번호를 붙여 새 파일로 만듭니다. 원본은 덮어쓰지 않습니다.
 기본 폴더에 쓸 수 없으면 ISO 선택 전에 ‘저장 폴더 변경’을 사용하세요.
 일반적으로 3.1 GiB 이상의 여유 공간이 필요합니다. 하드 링크를 지원하지 않는
@@ -35,7 +35,7 @@ USB/외장 저장소에서는 마지막 저장에 추가 복사 공간이 필요
 
 원본 ISO 크기: 3,231,907,840바이트
 원본 SHA-256: a92f19c3402592aaabd0f1c4fdd67a839c32cde5cd133e861c16bacca8322ac7
-완성 ISO SHA-256: e32176c41b3e1979e470c19c6b95f335c60d119f08474f6de33e24ad51565b0c
+완성 ISO SHA-256: 76eaa41b996e4055f0bb23efb0f5e3e8274096a5b09b5967bd290807b14d532b
 
 전체 대사·선택지의 1차 문맥 검수는 반영했습니다.
 모든 루트·엔딩의 실제 플레이 검증은 아직 진행 중입니다.
@@ -64,7 +64,7 @@ def main():
     report=ROOT/'bundled-smoke.json'
     subprocess.run([str(binary),'--smoke-test',str(report)],timeout=90,check=True)
     result=json.loads(report.read_text())
-    assert result['ok'] and result['bundled_patch_spans']==100277
+    assert result['ok'] and result['bundled_patch_spans']==100507
     label='windows-x64' if sys.platform=='win32' else ('macos-apple-silicon' if platform.machine()=='arm64' else 'macos-intel')
     out=ROOT/'release-assets';out.mkdir(exist_ok=True)
     stage=ROOT/'FF2-Korean-Patcher-GUI';stage.mkdir(exist_ok=True)
@@ -83,7 +83,7 @@ def main():
     license_path=Path(sys.base_prefix)/'LICENSE.txt'
     if not license_path.exists():license_path=Path(sys.base_prefix)/'LICENSE'
     if license_path.exists():shutil.copyfile(license_path,notices/'Python-LICENSE.txt')
-    archive=out/('FF2-Korean-Patcher-GUI-1.2-'+label+'.zip')
+    archive=out/('FF2-Korean-Patcher-GUI-1.3-'+label+'.zip')
     if sys.platform=='win32':
         shutil.copy2(binary,stage/binary.name)
         with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
