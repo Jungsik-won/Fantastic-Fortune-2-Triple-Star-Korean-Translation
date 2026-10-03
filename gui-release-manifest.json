@@ -1,74 +1,77 @@
 {
-  "gui_version": "1.2",
-  "patch_version": "v0.9.2",
-  "build_commit": "01686dacb8171315c0b8329e5f042833fa1161f0",
-  "build_run": "https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/actions/runs/37112075845",
+  "gui_version": "1.3",
+  "patch_version": "v0.9.3",
+  "build_commit": "ab68ef961a734fd1003f86288caf28f1084ae873",
+  "build_run": "https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/actions/runs/37117335977",
   "safety_tests": 23,
   "assets": [
     {
-      "name": "FF2-Korean-Patcher-GUI-1.2-macos-apple-silicon.zip",
-      "size": 18613736,
-      "sha256": "cde1e3817a3589cf07c0751884a48469c7d27f2c1d8e65aacae588a8aaf0a97b"
+      "name": "FF2-Korean-Patcher-GUI-1.3-macos-apple-silicon.zip",
+      "size": 19085002,
+      "sha256": "8f76a622ade56684b91e60844379927c282367cf59a1784df54ab6eb5c33864a"
     },
     {
-      "name": "FF2-Korean-Patcher-GUI-1.2-macos-intel.zip",
-      "size": 19276021,
-      "sha256": "554d49123be8c3e144e98589a73a14f9f4f023ae4d1c65000f8dd68f71424411"
+      "name": "FF2-Korean-Patcher-GUI-1.3-macos-intel.zip",
+      "size": 19746252,
+      "sha256": "9977fb8b6716861d6dcb2d954ac8ef58c2584c1cf10831d5ffc4595fb5e5bec1"
     },
     {
-      "name": "FF2-Korean-Patcher-GUI-1.2-windows-x64.zip",
-      "size": 19868702,
-      "sha256": "3858d6eb34cccf3f0f9eef9774b3e25230369b5d2e349484a060a17ac1af209a"
+      "name": "FF2-Korean-Patcher-GUI-1.3-windows-x64.zip",
+      "size": 20336903,
+      "sha256": "48a50307b9a472aa78f1c753c36ca5cfe734a7f105ade5a1da58adeea649cec6"
     },
     {
-      "name": "FF2-Korean-Patcher-GUI-1.2-source.zip",
-      "size": 8628785,
-      "sha256": "35c049c974a9f2032ee2d453b615c4537a4eb321e8d93ca3b389d0cfa30a579c"
+      "name": "FF2-Korean-Patcher-GUI-1.3-source.zip",
+      "size": 9098309,
+      "sha256": "6fd4aeca24222e1349b69ed216c953e9cce49cb9634d0a56280347a6e54eb0cb"
     }
   ],
   "platform_checks": [
     {
-      "name": "FF2-Korean-Patcher-GUI-1.2-macos-apple-silicon.zip",
+      "asset": "FF2-Korean-Patcher-GUI-1.3-macos-apple-silicon.zip",
       "bundled_smoke": {
         "ok": true,
         "platform": "darwin",
         "tk_version": "8.6.16",
-        "bundled_patch_spans": 100277,
+        "bundled_patch_spans": 100507,
         "iso_selection_autostarts": true,
         "gui_thread_completion": true,
         "source_preserved": true
-      }
+      },
+      "embedded_patch_sha256_verified": true
     },
     {
-      "name": "FF2-Korean-Patcher-GUI-1.2-macos-intel.zip",
+      "asset": "FF2-Korean-Patcher-GUI-1.3-macos-intel.zip",
       "bundled_smoke": {
         "ok": true,
         "platform": "darwin",
         "tk_version": "8.6.16",
-        "bundled_patch_spans": 100277,
+        "bundled_patch_spans": 100507,
         "iso_selection_autostarts": true,
         "gui_thread_completion": true,
         "source_preserved": true
-      }
+      },
+      "embedded_patch_sha256_verified": true
     },
     {
-      "name": "FF2-Korean-Patcher-GUI-1.2-windows-x64.zip",
+      "asset": "FF2-Korean-Patcher-GUI-1.3-windows-x64.zip",
       "bundled_smoke": {
         "ok": true,
         "platform": "win32",
         "tk_version": "8.6.15",
-        "bundled_patch_spans": 100277,
+        "bundled_patch_spans": 100507,
         "iso_selection_autostarts": true,
         "gui_thread_completion": true,
         "source_preserved": true
-      }
+      },
+      "embedded_patch_sha256_verified": false
     }
   ],
   "full_iso_check": {
-    "ok": true,
-    "patched_iso_sha256": "e32176c41b3e1979e470c19c6b95f335c60d119f08474f6de33e24ad51565b0c",
-    "matches_verified_iso": true,
-    "source_preserved": true,
-    "seconds": 33.11
+    "source_size": 3231907840,
+    "patch_sha256": "6e6ce3daf7f9b769c71494cf61f2ff0223de38f2ffcd25d852a4d5cf4ea38309",
+    "output_sha256": "76eaa41b996e4055f0bb23efb0f5e3e8274096a5b09b5967bd290807b14d532b",
+    "expected_sha256": "76eaa41b996e4055f0bb23efb0f5e3e8274096a5b09b5967bd290807b14d532b",
+    "ok": true
   }
 }
