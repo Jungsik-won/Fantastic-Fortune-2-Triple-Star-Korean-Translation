@@ -1,5 +1,3 @@
-cd470aede89d841c5483b698101a167bdc5e292957c5c843a2d410cfcaf9cfbc  ff2-ko-full-reviewed-v09-package.zip
-64e51689abda5222b2349633bc14d99b5821d5788ca60927b6f8f51446b1cb33  ff2-ko-full-reviewed-v09.ff2patch.gz
 253e78c8110db909addde8b29c88cbf1ff7ac59fc885ba73a767c4dd219e57e6  FF2-Korean-Patcher-GUI-1.0-macos-apple-silicon.zip
 7ef33f53704d0d515a949788f3964c0166fb7e3839e6b62549c634235ba9885c  FF2-Korean-Patcher-GUI-1.0-macos-intel.zip
 7da862b09a487f68a170ede9c56adce63a77db6734ded3a21cf6d22e41cfba05  FF2-Korean-Patcher-GUI-1.0-windows-x64.zip
