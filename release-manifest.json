@@ -1,20 +1,20 @@
 {
   "game": "Fantastic Fortune 2: Triple Star",
   "disc_id": "SLPS-25396",
-  "version": "v0.9.1",
+  "version": "v0.9.2",
   "source_size": 3231907840,
   "source_sha256": "a92f19c3402592aaabd0f1c4fdd67a839c32cde5cd133e861c16bacca8322ac7",
-  "patched_iso_sha256": "8c71d294615233d5fedd326d49249da0203c2025b0b4ae4b7168d7edfc49c3fa",
+  "patched_iso_sha256": "e32176c41b3e1979e470c19c6b95f335c60d119f08474f6de33e24ad51565b0c",
   "assets": [
     {
-      "name": "ff2-ko-full-reviewed-v091-package.zip",
-      "size": 8651284,
-      "sha256": "75955c1674b794b63f86f143a2275f7cdb279769688392d8d4ba6fc0148e4ae7"
+      "name": "ff2-ko-full-reviewed-v092-package.zip",
+      "size": 8638174,
+      "sha256": "0fa2ad6fee791797ac6a4d085c2fd70d7c95995d8220ee617234209ca1b28c93"
     },
     {
-      "name": "ff2-ko-full-reviewed-v091.ff2patch.gz",
-      "size": 8717822,
-      "sha256": "1676aee08026c267bf65c103531b0f7e338ee87f6ba12fba6d1ecf60dff20978"
+      "name": "ff2-ko-full-reviewed-v092.ff2patch.gz",
+      "size": 8715343,
+      "sha256": "3522dde23be7c08a234e881eed5d42d9b82bccc370eb70aa9f987bad9be02b8b"
     }
   ],
   "localization": {
@@ -26,7 +26,7 @@
   },
   "validation": {
     "string_qa_errors": 0,
-    "regression_tests_passed": 38,
+    "regression_tests_passed": 40,
     "runtime_memory_checks_passed": 8,
     "emulator": "PCSX2 2.6.3 macOS",
     "runtime_dialogues_advanced": 22,
@@ -35,10 +35,12 @@
     "runtime_memory_checks_note": "Inherited from v0.9: dialogue font and code unchanged.",
     "runtime_dialogues_advanced_note": "Inherited from v0.9: story translations unchanged.",
     "character_select_cards_runtime_verified": true,
-    "character_select_runtime": "Fresh v0.9.1 boot: three expanded and three collapsed cards, PCSX2 2.6.3 macOS."
+    "character_select_runtime": "Fresh v0.9.1 boot: three expanded and three collapsed cards, PCSX2 2.6.3 macOS.",
+    "weekday_runtime_verified": false,
+    "weekday_runtime_note": "User will verify the date badge during normal progression; no date-scene runtime verification claimed."
   },
   "changes": [
-    "Six protagonist selection cards re-typeset; cloud background and English decoration restored; original face pixels preserved.",
-    "Korean descriptions rephrased and constrained to sky regions."
+    "Fixed all 217 weekday labels on 31 date atlases: limit drawing to the original 64-entry runtime palette, eliminate opaque fringes at the transparency key, increase type size and restore gold/dark-outline styling.",
+    "Date numerals, sprite coordinates, resource layout and existing v0.9.1 selection card improvements preserved."
   ]
 }

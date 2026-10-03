@@ -1,2 +1,2 @@
-75955c1674b794b63f86f143a2275f7cdb279769688392d8d4ba6fc0148e4ae7  ff2-ko-full-reviewed-v091-package.zip
-1676aee08026c267bf65c103531b0f7e338ee87f6ba12fba6d1ecf60dff20978  ff2-ko-full-reviewed-v091.ff2patch.gz
+0fa2ad6fee791797ac6a4d085c2fd70d7c95995d8220ee617234209ca1b28c93  ff2-ko-full-reviewed-v092-package.zip
+3522dde23be7c08a234e881eed5d42d9b82bccc370eb70aa9f987bad9be02b8b  ff2-ko-full-reviewed-v092.ff2patch.gz
