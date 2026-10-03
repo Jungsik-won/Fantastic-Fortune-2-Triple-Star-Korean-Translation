@@ -1,0 +1,5 @@
+*.iso
+*.bin
+*.BIOS
+__pycache__/
+.DS_Store

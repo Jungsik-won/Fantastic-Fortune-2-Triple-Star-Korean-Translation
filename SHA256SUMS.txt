@@ -1,0 +1,2 @@
+cd470aede89d841c5483b698101a167bdc5e292957c5c843a2d410cfcaf9cfbc  ff2-ko-full-reviewed-v09-package.zip
+64e51689abda5222b2349633bc14d99b5821d5788ca60927b6f8f51446b1cb33  ff2-ko-full-reviewed-v09.ff2patch.gz
