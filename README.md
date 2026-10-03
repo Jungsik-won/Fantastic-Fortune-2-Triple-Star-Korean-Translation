@@ -1,20 +1,20 @@
-# 판타스틱 포츈 2: 트리플 스타 한글 패치 v0.9.3
+# 판타스틱 포츈 2: 트리플 스타 한글 패치 v0.9.4
 
 PlayStation 2 일본판 **Fantastic Fortune 2: Triple Star (SLPS-25396)**용 비공식 한글 패치입니다.
 
-대사·선택지 82,647개에 원문과 앞뒤 맥락을 대조한 1차 검수를 반영했습니다. 시스템·이름 입력 294항목, 이미지 165장의 문구 525개도 한글화했습니다. 모든 루트와 엔딩의 실제 플레이 검수는 아직 진행 중입니다.
+대사·선택지 82,647개에 원문과 앞뒤 맥락을 대조한 1차 검수를 반영했습니다. 시스템·이름 입력 318항목, 이미지 165장의 문구 525개도 한글화했습니다. 모든 루트와 엔딩의 실제 플레이 검수는 아직 진행 중입니다.
 
 ## 다운로드
 
-[**v0.9.3 패치 다운로드**](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/tag/v0.9.3)
+[**v0.9.4 패치 다운로드**](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/tag/v0.9.4)
 
-처음 적용할 때는 아래 **GUI 꾸러미**를 받으세요. Python을 설치하거나 명령어를 입력할 필요가 없습니다. 패치 파일이 앱에 포함돼 있습니다. v0.9의 검수와 v0.9.1의 선택 카드 개선을 유지하고 요일 표시 217개의 색상 오류와 식자를 수정했습니다. GUI 1.3에는 식자를 전반 개선한 v0.9.3 패치가 포함돼 있습니다.
+처음 적용할 때는 아래 **GUI 꾸러미**를 받으세요. Python을 설치하거나 명령어를 입력할 필요가 없습니다. 패치 파일이 앱에 포함돼 있습니다. v0.9의 검수와 v0.9.1의 선택 카드 개선을 유지하고 요일 표시 217개의 색상 오류와 식자를 수정했습니다. GUI 1.4에는 이미지 식자 개선과 누락 시스템 문구 24개를 보완한 v0.9.4 패치가 포함돼 있습니다.
 
 | 사용 환경 | 다운로드 |
 | --- | --- |
-| Windows 64비트 | [GUI 꾸러미](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/download/v0.9.3/FF2-Korean-Patcher-GUI-1.3-windows-x64.zip) |
-| Mac Apple Silicon (M1·M2·M3·M4 등) | [GUI 꾸러미](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/download/v0.9.3/FF2-Korean-Patcher-GUI-1.3-macos-apple-silicon.zip) |
-| Mac Intel | [GUI 꾸러미](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/download/v0.9.3/FF2-Korean-Patcher-GUI-1.3-macos-intel.zip) |
+| Windows 64비트 | [GUI 꾸러미](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/download/v0.9.4/FF2-Korean-Patcher-GUI-1.4-windows-x64.zip) |
+| Mac Apple Silicon (M1·M2·M3·M4 등) | [GUI 꾸러미](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/download/v0.9.4/FF2-Korean-Patcher-GUI-1.4-macos-apple-silicon.zip) |
+| Mac Intel | [GUI 꾸러미](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/download/v0.9.4/FF2-Korean-Patcher-GUI-1.4-macos-intel.zip) |
 
 ## GUI로 적용하기
 
@@ -23,34 +23,40 @@ PlayStation 2 일본판 **Fantastic Fortune 2: Triple Star (SLPS-25396)**용 비
 3. **‘원본 ISO 선택 → 자동 패치’**를 누르고 일본판 SLPS-25396 원본 ISO를 선택합니다.
 4. 원본 확인·패치·완성 ISO 검증이 끝나면 **‘완성 파일 폴더 열기’**를 누릅니다.
 
-원본과 같은 폴더에 `원본 이름 (Korean v0.9.3).iso`가 생성됩니다. 같은 이름이 이미 있으면 번호를 붙여 저장합니다. 원본과 기존 파일은 덮어쓰지 않습니다. 쓰기 권한이 없는 폴더라면 ISO 선택 전에 ‘저장 폴더 변경’을 사용하세요.
+원본과 같은 폴더에 `원본 이름 (Korean v0.9.4).iso`가 생성됩니다. 같은 이름이 이미 있으면 번호를 붙여 저장합니다. 원본과 기존 파일은 덮어쓰지 않습니다. 쓰기 권한이 없는 폴더라면 ISO 선택 전에 ‘저장 폴더 변경’을 사용하세요.
 
 원본 ISO를 앱이나 서버로 업로드하지 않습니다. 패치 작업은 인터넷 연결 없이 컴퓨터 안에서 진행됩니다. 일반적으로 약 3.1 GiB 이상이 필요하며, 일부 USB/외장 저장소의 대체 복사에서는 약 6.1 GiB 이상의 여유 공간이 필요할 수 있습니다.
 
 Mac 앱은 개발자 공증을 받지 않았습니다. macOS가 실행을 차단하면 시스템 설정 → 개인정보 보호 및 보안에서 앱 이름과 출처를 확인한 뒤 ‘그래도 열기’를 사용할 수 있습니다.
 
-**GUI 실행 확인:** Windows x64, Mac Apple Silicon, Mac Intel에서 실제로 빌드한 앱의 시작·ISO 선택·작업 스레드·완료 표시를 검사했습니다. 적용 엔진의 파일 보호·오류·취소·2 GiB 초과 처리 검사 23개를 통과했고, macOS에서 실제 3.2GB 원본 ISO의 결과 해시가 v0.9.3 검증 ISO와 일치함을 확인했습니다. 게임 플레이 확인 환경은 아래에 별도로 적었습니다.
+**GUI 실행 확인:** Windows x64, Mac Apple Silicon, Mac Intel에서 실제로 빌드한 앱의 시작·ISO 선택·작업 스레드·완료 표시를 검사했습니다. 적용 엔진의 파일 보호·오류·취소·2 GiB 초과 처리 검사 23개를 통과했고, macOS에서 실제 3.2GB 원본 ISO의 결과 해시가 v0.9.4 검증 ISO와 일치함을 확인했습니다. 게임 플레이 확인 환경은 아래에 별도로 적었습니다.
 
 ## 기존 명령행 적용 방법
 
-기존 `ff2-ko-full-reviewed-v093-package.zip`은 명령행 적용용으로 계속 받을 수 있습니다. 패치 형식은 xdelta가 아닌 `ff2patch` 차분 형식이며, GUI에는 이 패치가 포함돼 있어 별도 선택이 필요 없습니다.
+기존 `ff2-ko-full-reviewed-v094-package.zip`은 명령행 적용용으로 계속 받을 수 있습니다. 패치 형식은 xdelta가 아닌 `ff2patch` 차분 형식이며, GUI에는 이 패치가 포함돼 있어 별도 선택이 필요 없습니다.
 
 Python 3을 사용하는 기존 방법:
 
 ```sh
 python3 ff2.py apply \
   'Fantastic Fortune 2 - Triple Star (Japan).iso' \
-  ff2-ko-full-reviewed-v093.ff2patch.gz \
-  'Fantastic Fortune 2 - Triple Star (Korean Reviewed v0.9.3).iso'
+  ff2-ko-full-reviewed-v094.ff2patch.gz \
+  'Fantastic Fortune 2 - Triple Star (Korean Reviewed v0.9.4).iso'
 ```
 
 `Original ISO SHA-256 mismatch`가 나오면 아래 원본 해시와 비교하세요. 다른 덤프나 이미 수정한 ISO에는 적용되지 않습니다. 원본을 덮어쓰지 않으며, 출력 파일 이름은 아직 존재하지 않는 이름으로 지정해야 합니다.
 
 - 원본 크기: **3,231,907,840바이트**
 - 원본 SHA-256: `a92f19c3402592aaabd0f1c4fdd67a839c32cde5cd133e861c16bacca8322ac7`
-- 적용 후 ISO SHA-256: `76eaa41b996e4055f0bb23efb0f5e3e8274096a5b09b5967bd290807b14d532b`
+- 적용 후 ISO SHA-256: `241989cc367a9369f872c13be187d6cf4120736a7ceb03004258ab0908c170cb`
 
 PCSX2에서 생성한 ISO로 **새로 부팅**하세요. 이전 버전의 에뮬레이터 상태 저장을 불러오면 옛 글꼴·번역·실행 코드가 남아 있을 수 있습니다. 확인 환경은 **macOS / PCSX2 2.6.3**입니다. 다른 운영체제에서의 게임 플레이 검증은 아직 진행하지 않았습니다.
+
+## v0.9.4 시스템 미번역 보완
+
+학습 화면의 강사·소속·직업·상승/하락 능력치가 일본어로 남던 문제를 수정했습니다. 가나가 세 글자 미만인 한자 중심 문구가 추출에서 빠진 것이 원인이었습니다. 이름 입력·음악 재생 안내, 갤러리의 검은 고양이·아오이·플루, 없음·달성률까지 누락 24개를 보완했습니다.
+
+원본 UI 참조 표를 번역 목록과 별도로 대조하는 검사를 추가했습니다. 이 표에서 추출 누락은 0개이며 새 문구의 바이트·변수·줄바꿈·글꼴·재배치 참조를 검증했습니다. 화면의 실제 플레이 확인과 모든 루트·엔딩 검증은 아직 남아 있으므로 게임 전체에 미번역이 전혀 없다고 단정하지 않습니다.
 
 ## v0.9.3 이미지 식자 전반 개선
 
@@ -88,7 +94,7 @@ PCSX2에서 생성한 ISO로 **새로 부팅**하세요. 이전 버전의 에뮬
 
 ## 확인한 범위와 남은 검증
 
-전체 82,941개 문자열의 인코딩·제어문자·이름 변수·필드 길이·표시 폭과 높이 검사에서 오류 0건, 회귀 검사 47개 통과를 확인했습니다. 원본과 수정 ISO 크기가 같고 지정 변경 구간 밖의 모든 바이트도 같음을 검사했습니다.
+전체 82,965개 문자열의 인코딩·제어문자·이름 변수·필드 길이·표시 폭과 높이 검사에서 오류 0건, 회귀 검사 49개 통과를 확인했습니다. 원본과 수정 ISO 크기가 같고 지정 변경 구간 밖의 모든 바이트도 같음을 검사했습니다.
 
 v0.9.1에서 새로 부팅해 세 주인공의 펼친 카드와 접힌 카드 표시를 확인했습니다.
 

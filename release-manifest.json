@@ -1,38 +1,38 @@
 {
   "game": "Fantastic Fortune 2: Triple Star",
   "disc_id": "SLPS-25396",
-  "version": "v0.9.3",
+  "version": "v0.9.4",
   "source_size": 3231907840,
   "source_sha256": "a92f19c3402592aaabd0f1c4fdd67a839c32cde5cd133e861c16bacca8322ac7",
-  "patched_iso_sha256": "76eaa41b996e4055f0bb23efb0f5e3e8274096a5b09b5967bd290807b14d532b",
+  "patched_iso_sha256": "241989cc367a9369f872c13be187d6cf4120736a7ceb03004258ab0908c170cb",
   "assets": [
     {
-      "name": "ff2-ko-full-reviewed-v093-package.zip",
-      "size": 9108863,
-      "sha256": "3b218cb6fdcf6c6c4953738aa57cf06ec8b9e428cc8eae22446c67dad0eeb9de"
+      "name": "ff2-ko-full-reviewed-v094-package.zip",
+      "size": 9109647,
+      "sha256": "99ac93d22312b000adf5d369e7566204e89a58ad70a064834ba23ad28987e41b"
     },
     {
-      "name": "ff2-ko-full-reviewed-v093.ff2patch.gz",
-      "size": 9179171,
-      "sha256": "6e6ce3daf7f9b769c71494cf61f2ff0223de38f2ffcd25d852a4d5cf4ea38309"
+      "name": "ff2-ko-full-reviewed-v094.ff2patch.gz",
+      "size": 9180113,
+      "sha256": "a76367bab11d341f126fb75069e890fd407922925a45fc26233147400f54634a"
     }
   ],
   "localization": {
     "dialogue_and_choices": 82647,
-    "system_and_name_entry": 294,
+    "system_and_name_entry": 318,
     "graphics_images": 165,
     "graphics_text_cells": 525,
     "source_context_review": "one complete pass"
   },
   "validation": {
     "string_qa_errors": 0,
-    "regression_tests_passed": 47,
+    "regression_tests_passed": 49,
     "runtime_memory_checks_passed": 8,
     "emulator": "PCSX2 2.6.3 macOS",
     "runtime_dialogues_advanced": 22,
     "all_routes_playtested": false,
     "reported_early_dialogue_stall_reproduced": false,
-    "runtime_memory_checks_note": "Inherited from v0.9: dialogue font and code unchanged.",
+    "runtime_memory_checks_note": "Inherited from v0.9; v0.9.4 relocates additional UI data and the font bank. Runtime checks have not been repeated on this version.",
     "runtime_dialogues_advanced_note": "Inherited from v0.9: story translations unchanged.",
     "character_select_cards_runtime_verified": true,
     "character_select_runtime": "Fresh v0.9.1 boot: three expanded and three collapsed cards, PCSX2 2.6.3 macOS.",
@@ -41,39 +41,14 @@
     "graphics_runtime_verified": false,
     "graphics_runtime_note": "Resource previews and invariants verified; schedule/date/profile long-progression screens await user verification.",
     "gui_safety_tests_passed": 23,
-    "gui_platforms_verified": [
-      "windows-x64",
-      "macos-apple-silicon",
-      "macos-intel"
-    ],
-    "gui_full_iso_result_matches": true
+    "ui_supplements_added": 24,
+    "uncatalogued_referenced_ui": 0,
+    "new_ui_runtime_verified": false
   },
   "changes": [
-    "Replace flat image text backings with native rounded pill bars, parchment grain, transparent glyphs and restored patterned panels.",
-    "Correct Unisys profile column, calendar duplicate month label and weekday centering, lesson arrows, prologue/epilogue rows, and caption/date tail bounds.",
-    "Preserve v0.9 reviewed dialogue and v0.9.2 64-color weekday fix."
+    "Translate 24 omitted kanji-only or short system strings: lesson profiles/stats, name input/music hints, gallery names, none and completion rate.",
+    "Keep v0.9.3 image typesetting and reviewed story text.",
+    "Add guarded source supplements and UI pointer-table coverage checks; all-routes playback remains pending."
   ],
-  "patch_hunks": 100507,
-  "gui_assets": [
-    {
-      "name": "FF2-Korean-Patcher-GUI-1.3-macos-apple-silicon.zip",
-      "size": 19085002,
-      "sha256": "8f76a622ade56684b91e60844379927c282367cf59a1784df54ab6eb5c33864a"
-    },
-    {
-      "name": "FF2-Korean-Patcher-GUI-1.3-macos-intel.zip",
-      "size": 19746252,
-      "sha256": "9977fb8b6716861d6dcb2d954ac8ef58c2584c1cf10831d5ffc4595fb5e5bec1"
-    },
-    {
-      "name": "FF2-Korean-Patcher-GUI-1.3-windows-x64.zip",
-      "size": 20336903,
-      "sha256": "48a50307b9a472aa78f1c753c36ca5cfe734a7f105ade5a1da58adeea649cec6"
-    },
-    {
-      "name": "FF2-Korean-Patcher-GUI-1.3-source.zip",
-      "size": 9098309,
-      "sha256": "6fd4aeca24222e1349b69ed216c953e9cce49cb9634d0a56280347a6e54eb0cb"
-    }
-  ]
+  "patch_hunks": 100531
 }

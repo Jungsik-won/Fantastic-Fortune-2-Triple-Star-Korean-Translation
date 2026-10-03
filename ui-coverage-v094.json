@@ -1,0 +1,19 @@
+{
+  "supplement_count": 24,
+  "ui_pointer_table_range": [
+    "0xd6600",
+    "0xf9000"
+  ],
+  "text_destination_range": [
+    "0x220000",
+    "0x245900"
+  ],
+  "uncatalogued_referenced_ui": [],
+  "known_missing_literal_sources": [
+    "先生：%s",
+    "なし",
+    "達成率："
+  ],
+  "source_matches_verified": true,
+  "runtime_verified": false
+}
