@@ -10,9 +10,9 @@ import tempfile
 import time
 
 CHUNK = 4 * 1024 * 1024
-PATCH_SHA256 = '64e51689abda5222b2349633bc14d99b5821d5788ca60927b6f8f51446b1cb33'
+PATCH_SHA256 = '1676aee08026c267bf65c103531b0f7e338ee87f6ba12fba6d1ecf60dff20978'
 SOURCE_SHA256 = 'a92f19c3402592aaabd0f1c4fdd67a839c32cde5cd133e861c16bacca8322ac7'
-OUTPUT_SHA256 = 'ab63dae9548aeb5ac21a86fd93de089333620d10b118dbcf12a09fd40778be54'
+OUTPUT_SHA256 = '8c71d294615233d5fedd326d49249da0203c2025b0b4ae4b7168d7edfc49c3fa'
 SOURCE_SIZE = 3231907840
 
 
@@ -79,7 +79,7 @@ def load_patch(path, expected_digest=PATCH_SHA256, cancel=None):
 def next_output(source, folder=None):
     source = Path(source)
     folder = Path(folder) if folder else source.parent
-    stem = source.stem + ' (Korean v0.9)'
+    stem = source.stem + ' (Korean v0.9.1)'
     candidate = folder / (stem + '.iso')
     n = 2
     while candidate.exists() or candidate.is_symlink():

@@ -1,4 +1,4 @@
-"""FF2 v0.9 offline desktop patcher. Select an ISO to start automatically."""
+"""FF2 v0.9.1 offline desktop patcher. Select an ISO to start automatically."""
 import argparse
 import json
 import os
@@ -12,7 +12,7 @@ from tkinter import filedialog, messagebox, ttk
 
 from patch_engine import apply, Cancelled, PatchError, next_output, load_patch
 
-PATCH_NAME = 'ff2-ko-full-reviewed-v09.ff2patch.gz'
+PATCH_NAME = 'ff2-ko-full-reviewed-v091.ff2patch.gz'
 
 def resource_path():
     base = Path(getattr(sys, '_MEIPASS', Path(__file__).resolve().parent))
@@ -47,13 +47,13 @@ class Patcher:
         self.status = tk.StringVar(value='원본 ISO를 선택하면 자동으로 시작합니다.')
         self.iso_text = tk.StringVar(value='선택한 ISO가 없습니다')
         self.output_text = tk.StringVar(value='원본 ISO와 같은 폴더에 새 파일로 저장합니다.')
-        root.title('판타스틱 포츈 2 · 한글 패치 v0.9')
+        root.title('판타스틱 포츈 2 · 한글 패치 v0.9.1')
         root.geometry('680x435')
         root.minsize(600, 420)
         frame = ttk.Frame(root, padding=24)
         frame.pack(fill='both', expand=True)
         ttk.Label(frame, text='판타스틱 포츈 2: 트리플 스타', font=('', 17, 'bold')).pack(anchor='w')
-        ttk.Label(frame, text='한글 검수판 v0.9 · GUI 1.0', padding=(0, 5)).pack(anchor='w')
+        ttk.Label(frame, text='한글 검수판 v0.9.1 · GUI 1.1', padding=(0, 5)).pack(anchor='w')
         ttk.Label(frame, text='일본판 원본 ISO를 선택하면 확인·패치·검증까지 자동으로 진행합니다.\n원본 파일은 그대로 두고 한글판 ISO를 새로 만듭니다.', wraplength=620).pack(anchor='w', pady=(8, 18))
         self.select_button = ttk.Button(frame, text='원본 ISO 선택 → 자동 패치', command=self.choose_iso)
         self.select_button.pack(anchor='w', ipady=7)

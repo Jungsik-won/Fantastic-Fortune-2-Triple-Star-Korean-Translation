@@ -46,8 +46,8 @@ jobs:
         with:
           path: release-assets
           merge-multiple: true
-      - name: Publish verified apps to existing v0.9 release
+      - name: Publish verified apps to existing v0.9.1 release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release upload v0.9 release-assets/*.zip --repo "$GITHUB_REPOSITORY" --clobber
+          gh release upload v0.9.1 release-assets/*.zip --repo "$GITHUB_REPOSITORY" --clobber
