@@ -3,3 +3,10 @@
 *.BIOS
 __pycache__/
 .DS_Store
+build/
+dist/
+build-resources/
+release-assets/
+package-stage/
+*.spec
+bundled-smoke.json
