@@ -8,13 +8,34 @@ PlayStation 2 일본판 **Fantastic Fortune 2: Triple Star (SLPS-25396)**용 비
 
 [**v0.9 패치 다운로드**](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/tag/v0.9)
 
-처음 적용할 때는 **ff2-ko-full-reviewed-v09-package.zip**을 받으세요. 차분 패치와 적용 도구, 안내가 함께 들어 있습니다. 원본 게임 ISO·BIOS는 포함하지 않습니다.
+처음 적용할 때는 아래 **GUI 꾸러미**를 받으세요. Python을 설치하거나 명령어를 입력할 필요가 없습니다. 패치 파일이 앱에 포함돼 있습니다. 게임 내용은 기존 v0.9와 같으며, 적용 도구를 GUI 1.0으로 추가한 배포입니다.
 
-## 적용 방법
+| 사용 환경 | 다운로드 |
+| --- | --- |
+| Windows 64비트 | [GUI 꾸러미](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/download/v0.9/FF2-Korean-Patcher-GUI-1.0-windows-x64.zip) |
+| Mac Apple Silicon (M1·M2·M3·M4 등) | [GUI 꾸러미](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/download/v0.9/FF2-Korean-Patcher-GUI-1.0-macos-apple-silicon.zip) |
+| Mac Intel | [GUI 꾸러미](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/download/v0.9/FF2-Korean-Patcher-GUI-1.0-macos-intel.zip) |
 
-1. 일본판 SLPS-25396의 원본 ISO를 준비합니다.
-2. 패치 꾸러미를 압축 해제하고 원본 ISO와 같은 폴더에 둡니다.
-3. Python 3이 설치된 환경의 터미널에서 아래 명령을 실행합니다.
+## GUI로 적용하기
+
+1. 사용 환경에 맞는 GUI 꾸러미를 압축 해제합니다.
+2. Windows에서는 `FF2-Korean-Patcher.exe`, Mac에서는 `FF2-Korean-Patcher.app`을 엽니다.
+3. **‘원본 ISO 선택 → 자동 패치’**를 누르고 일본판 SLPS-25396 원본 ISO를 선택합니다.
+4. 원본 확인·패치·완성 ISO 검증이 끝나면 **‘완성 파일 폴더 열기’**를 누릅니다.
+
+원본과 같은 폴더에 `원본 이름 (Korean v0.9).iso`가 생성됩니다. 같은 이름이 이미 있으면 번호를 붙여 저장합니다. 원본과 기존 파일은 덮어쓰지 않습니다. 쓰기 권한이 없는 폴더라면 ISO 선택 전에 ‘저장 폴더 변경’을 사용하세요.
+
+원본 ISO를 앱이나 서버로 업로드하지 않습니다. 패치 작업은 인터넷 연결 없이 컴퓨터 안에서 진행됩니다. 일반적으로 약 3.1 GiB 이상이 필요하며, 일부 USB/외장 저장소의 대체 복사에서는 약 6.1 GiB 이상의 여유 공간이 필요할 수 있습니다.
+
+Mac 앱은 개발자 공증을 받지 않았습니다. macOS가 실행을 차단하면 시스템 설정 → 개인정보 보호 및 보안에서 앱 이름과 출처를 확인한 뒤 ‘그래도 열기’를 사용할 수 있습니다.
+
+**GUI 실행 확인:** Windows x64, Mac Apple Silicon, Mac Intel에서 실제로 빌드한 앱의 시작·ISO 선택·작업 스레드·완료 표시를 검사했습니다. 적용 엔진의 파일 보호·오류·취소·2 GiB 초과 처리 검사 23개를 통과했고, macOS에서 실제 3.2GB 원본 ISO의 결과 해시가 기존 v0.9와 일치함을 확인했습니다. 게임 플레이 확인 환경은 아래에 별도로 적었습니다.
+
+## 기존 명령행 적용 방법
+
+기존 `ff2-ko-full-reviewed-v09-package.zip`은 명령행 적용용으로 계속 받을 수 있습니다. 패치 형식은 xdelta가 아닌 `ff2patch` 차분 형식이며, GUI에는 이 패치가 포함돼 있어 별도 선택이 필요 없습니다.
+
+Python 3을 사용하는 기존 방법:
 
 ```sh
 python3 ff2.py apply \
@@ -29,7 +50,7 @@ python3 ff2.py apply \
 - 원본 SHA-256: `a92f19c3402592aaabd0f1c4fdd67a839c32cde5cd133e861c16bacca8322ac7`
 - 적용 후 ISO SHA-256: `ab63dae9548aeb5ac21a86fd93de089333620d10b118dbcf12a09fd40778be54`
 
-PCSX2에서 생성한 ISO로 **새로 부팅**하세요. 이전 버전의 에뮬레이터 상태 저장을 불러오면 옛 글꼴·번역·실행 코드가 남아 있을 수 있습니다. 확인 환경은 **macOS / PCSX2 2.6.3**입니다. 패치 적용 도구와 게임 실행의 다른 운영체제 환경은 추가 검증이 필요합니다.
+PCSX2에서 생성한 ISO로 **새로 부팅**하세요. 이전 버전의 에뮬레이터 상태 저장을 불러오면 옛 글꼴·번역·실행 코드가 남아 있을 수 있습니다. 확인 환경은 **macOS / PCSX2 2.6.3**입니다. 다른 운영체제에서의 게임 플레이 검증은 아직 진행하지 않았습니다.
 
 ## 반영 내용
 
@@ -61,7 +82,9 @@ PCSX2 2.6.3의 기본 EE 재컴파일러로 새로 부팅하여 설정 두 페�
 
 ## 저장소 구성
 
-- `tools/`: 패치 적용 도구. 전체 개발 자료가 아닌 배포용 도구입니다.
+- `gui/`: GUI 적용 도구와 Windows·Mac 빌드 스크립트
+- `tests/`: GUI 적용 엔진의 파일 보호·오류 처리 검사
+- `tools/`: 기존 명령행 적용 도구. 전체 개발 자료가 아닌 배포용 도구입니다.
 - `screenshots/`: v0.9 실행 확인 화면
 - `SHA256SUMS.txt`: 릴리스 파일의 SHA-256
 - `release-manifest.json`: 대상 버전과 검증 범위
