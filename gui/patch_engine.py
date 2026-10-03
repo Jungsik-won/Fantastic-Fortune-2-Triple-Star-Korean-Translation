@@ -88,7 +88,7 @@ def next_output(source, folder=None):
     return candidate
 
 
-def publish_no_replace(temp, output, cancel=None, progress=None):
+def publish_no_replace(temp, output, cancel=None, progress=None, expected_digest=None):
     """Atomically link on APFS/NTFS; use exclusive copying on exFAT/FAT."""
     check_cancel(cancel)
     try:
@@ -119,6 +119,8 @@ def publish_no_replace(temp, output, cancel=None, progress=None):
                         progress(pos / size)
             dst.flush()
             os.fsync(dst.fileno())
+        if expected_digest and file_hash(output, cancel) != expected_digest:
+            raise PatchError('완성 파일 저장 중 검증에 실패했습니다. 디스크 상태를 확인해 주세요.')
     except BaseException:
         if created:
             output.unlink(missing_ok=True)
@@ -198,7 +200,8 @@ def apply(source, patch_path, output, cancel=None, progress=None,
             raise PatchError('저장된 ISO의 검증에 실패했습니다. 디스크 상태를 확인해 주세요.')
         emit('완성 파일을 저장하고 있습니다', 97)
         publish_no_replace(temp, output, cancel,
-                           lambda f: emit('완성 파일을 저장하고 있습니다', 97 + 2*f))
+                           lambda f: emit('완성 파일을 저장하고 있습니다', 97 + 2*f),
+                           expected_digest=output_digest)
         # No cancellation check after commit: a verified output now exists.
         if progress:
             progress('한글 패치가 완료됐습니다', 100)

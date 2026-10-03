@@ -39,6 +39,9 @@ USB/외장 저장소에서는 마지막 저장에 추가 복사 공간이 필요
 
 전체 대사·선택지의 1차 문맥 검수는 반영했습니다.
 모든 루트·엔딩의 실제 플레이 검증은 아직 진행 중입니다.
+Mac 앱은 개발자 공증을 받지 않은 앱입니다. macOS가 실행을 차단하면
+시스템 설정 → 개인정보 보호 및 보안에서 앱 이름과 출처를 확인한 뒤
+‘그래도 열기’를 사용할 수 있습니다.
 원본 ISO와 BIOS는 포함하지 않습니다.
 https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation
 '''
@@ -64,7 +67,7 @@ def main():
     assert result['ok'] and result['bundled_patch_spans']==99934
     label='windows-x64' if sys.platform=='win32' else ('macos-apple-silicon' if platform.machine()=='arm64' else 'macos-intel')
     out=ROOT/'release-assets';out.mkdir(exist_ok=True)
-    stage=ROOT/'package-stage';stage.mkdir(exist_ok=True)
+    stage=ROOT/'FF2-Korean-Patcher-GUI';stage.mkdir(exist_ok=True)
     (stage/'사용 안내.txt').write_text(README,encoding='utf-8')
     (stage/'실행 확인.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
     # Include notices from the bundled runtime and third-party packages.

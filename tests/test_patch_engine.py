@@ -130,6 +130,12 @@ class PatcherTests(unittest.TestCase):
             with self.assertRaises(e.Cancelled):
                 e.publish_no_replace(temp,self.output,cancel,lambda f:cancel.set())
         self.assertFalse(self.output.exists())
+    def test_fallback_copy_verification_failure_cleanup(self):
+        temp=self.folder/'temporary';temp.write_bytes(b'T'*100)
+        with mock.patch.object(e.os,'link',side_effect=OSError(errno.EOPNOTSUPP,'unsupported')):
+            with self.assertRaises(e.PatchError):
+                e.publish_no_replace(temp,self.output,expected_digest='0'*64)
+        self.assertFalse(self.output.exists())
     def test_next_output_avoids_existing_names(self):
         one=e.next_output(self.source);one.write_bytes(b'existing')
         two=e.next_output(self.source);two.write_bytes(b'existing')
