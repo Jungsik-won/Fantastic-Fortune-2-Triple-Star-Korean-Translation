@@ -1,4 +1,4 @@
-# 판타스틱 포츈 2: 트리플 스타 한글 패치 v0.9
+# 판타스틱 포츈 2: 트리플 스타 한글 패치 v0.9.1
 
 PlayStation 2 일본판 **Fantastic Fortune 2: Triple Star (SLPS-25396)**용 비공식 한글 패치입니다.
 
@@ -6,15 +6,15 @@ PlayStation 2 일본판 **Fantastic Fortune 2: Triple Star (SLPS-25396)**용 비
 
 ## 다운로드
 
-[**v0.9 패치 다운로드**](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/tag/v0.9)
+[**v0.9.1 패치 다운로드**](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/tag/v0.9.1)
 
-처음 적용할 때는 아래 **GUI 꾸러미**를 받으세요. Python을 설치하거나 명령어를 입력할 필요가 없습니다. 패치 파일이 앱에 포함돼 있습니다. 게임 내용은 기존 v0.9와 같으며, 적용 도구를 GUI 1.0으로 추가한 배포입니다.
+처음 적용할 때는 아래 **GUI 꾸러미**를 받으세요. Python을 설치하거나 명령어를 입력할 필요가 없습니다. 패치 파일이 앱에 포함돼 있습니다. v0.9의 검수 내용을 유지하며 주인공 선택 화면의 카드 6장을 다시 식자한 버전입니다. GUI 1.1에는 이 수정판이 포함돼 있습니다.
 
 | 사용 환경 | 다운로드 |
 | --- | --- |
-| Windows 64비트 | [GUI 꾸러미](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/download/v0.9/FF2-Korean-Patcher-GUI-1.0-windows-x64.zip) |
-| Mac Apple Silicon (M1·M2·M3·M4 등) | [GUI 꾸러미](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/download/v0.9/FF2-Korean-Patcher-GUI-1.0-macos-apple-silicon.zip) |
-| Mac Intel | [GUI 꾸러미](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/download/v0.9/FF2-Korean-Patcher-GUI-1.0-macos-intel.zip) |
+| Windows 64비트 | [GUI 꾸러미](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/download/v0.9.1/FF2-Korean-Patcher-GUI-1.1-windows-x64.zip) |
+| Mac Apple Silicon (M1·M2·M3·M4 등) | [GUI 꾸러미](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/download/v0.9.1/FF2-Korean-Patcher-GUI-1.1-macos-apple-silicon.zip) |
+| Mac Intel | [GUI 꾸러미](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/releases/download/v0.9.1/FF2-Korean-Patcher-GUI-1.1-macos-intel.zip) |
 
 ## GUI로 적용하기
 
@@ -23,34 +23,38 @@ PlayStation 2 일본판 **Fantastic Fortune 2: Triple Star (SLPS-25396)**용 비
 3. **‘원본 ISO 선택 → 자동 패치’**를 누르고 일본판 SLPS-25396 원본 ISO를 선택합니다.
 4. 원본 확인·패치·완성 ISO 검증이 끝나면 **‘완성 파일 폴더 열기’**를 누릅니다.
 
-원본과 같은 폴더에 `원본 이름 (Korean v0.9).iso`가 생성됩니다. 같은 이름이 이미 있으면 번호를 붙여 저장합니다. 원본과 기존 파일은 덮어쓰지 않습니다. 쓰기 권한이 없는 폴더라면 ISO 선택 전에 ‘저장 폴더 변경’을 사용하세요.
+원본과 같은 폴더에 `원본 이름 (Korean v0.9.1).iso`가 생성됩니다. 같은 이름이 이미 있으면 번호를 붙여 저장합니다. 원본과 기존 파일은 덮어쓰지 않습니다. 쓰기 권한이 없는 폴더라면 ISO 선택 전에 ‘저장 폴더 변경’을 사용하세요.
 
 원본 ISO를 앱이나 서버로 업로드하지 않습니다. 패치 작업은 인터넷 연결 없이 컴퓨터 안에서 진행됩니다. 일반적으로 약 3.1 GiB 이상이 필요하며, 일부 USB/외장 저장소의 대체 복사에서는 약 6.1 GiB 이상의 여유 공간이 필요할 수 있습니다.
 
 Mac 앱은 개발자 공증을 받지 않았습니다. macOS가 실행을 차단하면 시스템 설정 → 개인정보 보호 및 보안에서 앱 이름과 출처를 확인한 뒤 ‘그래도 열기’를 사용할 수 있습니다.
 
-**GUI 실행 확인:** Windows x64, Mac Apple Silicon, Mac Intel에서 실제로 빌드한 앱의 시작·ISO 선택·작업 스레드·완료 표시를 검사했습니다. 적용 엔진의 파일 보호·오류·취소·2 GiB 초과 처리 검사 23개를 통과했고, macOS에서 실제 3.2GB 원본 ISO의 결과 해시가 기존 v0.9와 일치함을 확인했습니다. 게임 플레이 확인 환경은 아래에 별도로 적었습니다.
+**GUI 실행 확인:** Windows x64, Mac Apple Silicon, Mac Intel에서 실제로 빌드한 앱의 시작·ISO 선택·작업 스레드·완료 표시를 검사했습니다. 적용 엔진의 파일 보호·오류·취소·2 GiB 초과 처리 검사 23개를 통과했고, macOS에서 실제 3.2GB 원본 ISO의 결과 해시가 v0.9.1 검증 ISO와 일치함을 확인했습니다. 게임 플레이 확인 환경은 아래에 별도로 적었습니다.
 
 ## 기존 명령행 적용 방법
 
-기존 `ff2-ko-full-reviewed-v09-package.zip`은 명령행 적용용으로 계속 받을 수 있습니다. 패치 형식은 xdelta가 아닌 `ff2patch` 차분 형식이며, GUI에는 이 패치가 포함돼 있어 별도 선택이 필요 없습니다.
+기존 `ff2-ko-full-reviewed-v091-package.zip`은 명령행 적용용으로 계속 받을 수 있습니다. 패치 형식은 xdelta가 아닌 `ff2patch` 차분 형식이며, GUI에는 이 패치가 포함돼 있어 별도 선택이 필요 없습니다.
 
 Python 3을 사용하는 기존 방법:
 
 ```sh
 python3 ff2.py apply \
   'Fantastic Fortune 2 - Triple Star (Japan).iso' \
-  ff2-ko-full-reviewed-v09.ff2patch.gz \
-  'Fantastic Fortune 2 - Triple Star (Korean Reviewed v0.9).iso'
+  ff2-ko-full-reviewed-v091.ff2patch.gz \
+  'Fantastic Fortune 2 - Triple Star (Korean Reviewed v0.9.1).iso'
 ```
 
 `Original ISO SHA-256 mismatch`가 나오면 아래 원본 해시와 비교하세요. 다른 덤프나 이미 수정한 ISO에는 적용되지 않습니다. 원본을 덮어쓰지 않으며, 출력 파일 이름은 아직 존재하지 않는 이름으로 지정해야 합니다.
 
 - 원본 크기: **3,231,907,840바이트**
 - 원본 SHA-256: `a92f19c3402592aaabd0f1c4fdd67a839c32cde5cd133e861c16bacca8322ac7`
-- 적용 후 ISO SHA-256: `ab63dae9548aeb5ac21a86fd93de089333620d10b118dbcf12a09fd40778be54`
+- 적용 후 ISO SHA-256: `8c71d294615233d5fedd326d49249da0203c2025b0b4ae4b7168d7edfc49c3fa`
 
 PCSX2에서 생성한 ISO로 **새로 부팅**하세요. 이전 버전의 에뮬레이터 상태 저장을 불러오면 옛 글꼴·번역·실행 코드가 남아 있을 수 있습니다. 확인 환경은 **macOS / PCSX2 2.6.3**입니다. 다른 운영체제에서의 게임 플레이 검증은 아직 진행하지 않았습니다.
+
+## v0.9.1 선택 화면 수정
+
+마린·아쿠아·아오이의 펼친 카드와 접힌 카드 6장을 다시 식자했습니다. 단색 파란 덮개를 제거하고 구름 배경과 영문 장식을 복원했습니다. 원래 얼굴 픽셀과 투명도를 유지하며 이름·설명 크기와 줄 배치를 조정하고 소개 문장을 다듬었습니다. 다른 이미지 화면은 이번 식자 수정 범위에 포함되지 않습니다.
 
 ## 반영 내용
 
@@ -66,15 +70,23 @@ PCSX2에서 생성한 ISO로 **새로 부팅**하세요. 이전 버전의 에뮬
 
 ## 확인한 범위와 남은 검증
 
-전체 82,941개 문자열의 인코딩·제어문자·이름 변수·필드 길이·표시 폭과 높이 검사에서 오류 0건, 회귀 검사 36개 통과를 확인했습니다. 원본과 수정 ISO 크기가 같고 지정 변경 구간 밖의 모든 바이트도 같음을 검사했습니다.
+전체 82,941개 문자열의 인코딩·제어문자·이름 변수·필드 길이·표시 폭과 높이 검사에서 오류 0건, 회귀 검사 38개 통과를 확인했습니다. 원본과 수정 ISO 크기가 같고 지정 변경 구간 밖의 모든 바이트도 같음을 검사했습니다.
 
-PCSX2 2.6.3의 기본 EE 재컴파일러로 새로 부팅하여 설정 두 페이지와 아오이 초반을 확인했습니다. 자동 입력 24회로 서로 다른 비어 있지 않은 대사 22개가 진행됐으며, 메모리 내 글꼴·코드·색상 검사 8개를 통과했습니다.
+v0.9.1에서 새로 부팅해 세 주인공의 펼친 카드와 접힌 카드 표시를 확인했습니다.
+
+v0.9에서 PCSX2 2.6.3의 기본 EE 재컴파일러로 새로 부팅하여 설정 두 페이지와 아오이 초반을 확인했습니다. 자동 입력 24회로 서로 다른 비어 있지 않은 대사 22개가 진행됐으며, 메모리 내 글꼴·코드·색상 검사 8개를 통과했습니다.
 
 모든 루트·엔딩과 실제 컨트롤러의 장시간 진행은 아직 확인하지 않았습니다. 초반에 다음 대사로 넘어가지 않았다는 제보는 해당 장면이 특정되지 않아 재현하지 못했습니다. 이 증상의 해결을 확정한 버전은 아닙니다.
 
 오류 제보는 [Issues](https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/issues)에 패치 버전, PCSX2 버전, 주인공·장면, 화면과 재현 순서를 남겨 주세요.
 
 ## 실제 실행 화면
+
+![v0.9.1 마린 선택 화면](screenshots/character-select-marine-v091.png)
+
+![v0.9.1 아쿠아 선택 화면](screenshots/character-select-aqua-v091.png)
+
+![v0.9.1 아오이 선택 화면](screenshots/character-select-aoi-v091.png)
 
 ![v0.9 베니마루 대사](screenshots/dialogue-benimaru-v09.png)
 
@@ -85,7 +97,7 @@ PCSX2 2.6.3의 기본 EE 재컴파일러로 새로 부팅하여 설정 두 페�
 - `gui/`: GUI 적용 도구와 Windows·Mac 빌드 스크립트
 - `tests/`: GUI 적용 엔진의 파일 보호·오류 처리 검사
 - `tools/`: 기존 명령행 적용 도구. 전체 개발 자료가 아닌 배포용 도구입니다.
-- `screenshots/`: v0.9 실행 확인 화면
+- `screenshots/`: 실제 실행 확인 화면
 - `SHA256SUMS.txt`: 릴리스 파일의 SHA-256
 - `release-manifest.json`: 대상 버전과 검증 범위
 

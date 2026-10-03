@@ -1,34 +1,34 @@
 {
-  "gui_version": "1.0",
-  "patch_version": "v0.9",
-  "build_commit": "e65dd2937ca5e1a0f01e500e653c1970d9ded80f",
-  "build_run": "https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/actions/runs/37099771273",
+  "gui_version": "1.1",
+  "patch_version": "v0.9.1",
+  "build_commit": "4c78c16f5ffcf82bd6dae352dbe9d8337012b6bb",
+  "build_run": "https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/actions/runs/37110870782",
   "safety_tests": 23,
   "assets": [
     {
-      "name": "FF2-Korean-Patcher-GUI-1.0-macos-apple-silicon.zip",
-      "size": 18606553,
-      "sha256": "253e78c8110db909addde8b29c88cbf1ff7ac59fc885ba73a767c4dd219e57e6"
+      "name": "FF2-Korean-Patcher-GUI-1.1-macos-apple-silicon.zip",
+      "size": 18628290,
+      "sha256": "f4ad043a9142d1779361a45a3200c622c6e68fb1e5794884e7bc86e7ab17f363"
     },
     {
-      "name": "FF2-Korean-Patcher-GUI-1.0-macos-intel.zip",
-      "size": 19267332,
-      "sha256": "7ef33f53704d0d515a949788f3964c0166fb7e3839e6b62549c634235ba9885c"
+      "name": "FF2-Korean-Patcher-GUI-1.1-macos-intel.zip",
+      "size": 19288497,
+      "sha256": "0701405ab0c97ee775adcb6986258368e3fa1cba3bdb5c112b5395afd20fe260"
     },
     {
-      "name": "FF2-Korean-Patcher-GUI-1.0-windows-x64.zip",
-      "size": 19860638,
-      "sha256": "7da862b09a487f68a170ede9c56adce63a77db6734ded3a21cf6d22e41cfba05"
+      "name": "FF2-Korean-Patcher-GUI-1.1-windows-x64.zip",
+      "size": 19881269,
+      "sha256": "69b48009be5446ad7c6438a588ab60d8e206a0296135c9f17629e1f086927ec3"
     },
     {
-      "name": "FF2-Korean-Patcher-GUI-1.0-source.zip",
-      "size": 8619615,
-      "sha256": "a5bb50233e7005cfd92f7339d9a9e6d04e62b90346ade942bde7a7102de01d87"
+      "name": "FF2-Korean-Patcher-GUI-1.1-source.zip",
+      "size": 8641895,
+      "sha256": "c6b6bedbeeb839623a4e806d7a092b3b90a23cd2964614f7293c24a5c5584677"
     }
   ],
   "platform_checks": [
     {
-      "asset": "FF2-Korean-Patcher-GUI-1.0-macos-apple-silicon.zip",
+      "name": "FF2-Korean-Patcher-GUI-1.1-macos-apple-silicon.zip",
       "bundled_smoke": {
         "ok": true,
         "platform": "darwin",
@@ -40,7 +40,7 @@
       }
     },
     {
-      "asset": "FF2-Korean-Patcher-GUI-1.0-macos-intel.zip",
+      "name": "FF2-Korean-Patcher-GUI-1.1-macos-intel.zip",
       "bundled_smoke": {
         "ok": true,
         "platform": "darwin",
@@ -52,7 +52,7 @@
       }
     },
     {
-      "asset": "FF2-Korean-Patcher-GUI-1.0-windows-x64.zip",
+      "name": "FF2-Korean-Patcher-GUI-1.1-windows-x64.zip",
       "bundled_smoke": {
         "ok": true,
         "platform": "win32",
@@ -65,21 +65,10 @@
     }
   ],
   "full_iso_check": {
-    "passed": true,
-    "source_sha256": "a92f19c3402592aaabd0f1c4fdd67a839c32cde5cd133e861c16bacca8322ac7",
-    "output_sha256": "ab63dae9548aeb5ac21a86fd93de089333620d10b118dbcf12a09fd40778be54",
-    "output_size": 3231907840,
-    "elapsed_seconds": 25.68,
-    "engine": "GUI 1.0 stream apply",
-    "patch_version": "v0.9"
-  },
-  "local_mac_bundled_smoke": {
     "ok": true,
-    "platform": "darwin",
-    "tk_version": "8.6.16",
-    "bundled_patch_spans": 99934,
-    "iso_selection_autostarts": true,
-    "gui_thread_completion": true,
+    "patched_iso_sha256": "8c71d294615233d5fedd326d49249da0203c2025b0b4ae4b7168d7edfc49c3fa",
+    "matches_verified_iso": true,
+    "seconds": 34.67,
     "source_preserved": true
   }
 }
