@@ -1,39 +1,39 @@
 {
-  "gui_version": "1.3",
-  "patch_version": "v0.9.3",
-  "build_commit": "ab68ef961a734fd1003f86288caf28f1084ae873",
-  "build_run": "https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/actions/runs/37117335977",
+  "gui_version": "1.4",
+  "patch_version": "v0.9.4",
+  "build_commit": "bef8ac09d94fa969cf1c5085ac8001a96a571ce8",
+  "build_run": "https://github.com/Jungsik-won/Fantastic-Fortune-2-Triple-Star-Korean-Translation/actions/runs/37119268237",
   "safety_tests": 23,
   "assets": [
     {
-      "name": "FF2-Korean-Patcher-GUI-1.3-macos-apple-silicon.zip",
-      "size": 19085002,
-      "sha256": "8f76a622ade56684b91e60844379927c282367cf59a1784df54ab6eb5c33864a"
+      "name": "FF2-Korean-Patcher-GUI-1.4-macos-apple-silicon.zip",
+      "size": 19086365,
+      "sha256": "34c09ff907c990019915288b9642c0eb3e74aae7971b5e57dec4832a0f5442ed"
     },
     {
-      "name": "FF2-Korean-Patcher-GUI-1.3-macos-intel.zip",
-      "size": 19746252,
-      "sha256": "9977fb8b6716861d6dcb2d954ac8ef58c2584c1cf10831d5ffc4595fb5e5bec1"
+      "name": "FF2-Korean-Patcher-GUI-1.4-macos-intel.zip",
+      "size": 19747525,
+      "sha256": "4d2b87b6950eaf19988767f215e30e6c0ec7f29c4358da6f0a62119be310c06a"
     },
     {
-      "name": "FF2-Korean-Patcher-GUI-1.3-windows-x64.zip",
-      "size": 20336903,
-      "sha256": "48a50307b9a472aa78f1c753c36ca5cfe734a7f105ade5a1da58adeea649cec6"
+      "name": "FF2-Korean-Patcher-GUI-1.4-windows-x64.zip",
+      "size": 20339440,
+      "sha256": "7ff102fa85b4ce1f23a13b430d69c1dfa624172394fdb91fec8953073c5b360b"
     },
     {
-      "name": "FF2-Korean-Patcher-GUI-1.3-source.zip",
-      "size": 9098309,
-      "sha256": "6fd4aeca24222e1349b69ed216c953e9cce49cb9634d0a56280347a6e54eb0cb"
+      "name": "FF2-Korean-Patcher-GUI-1.4-source.zip",
+      "size": 9104955,
+      "sha256": "d5dfeac19ee822f8ff09c6492410c7f1062a925b1c0f67322d9e5f04ec768fcd"
     }
   ],
   "platform_checks": [
     {
-      "asset": "FF2-Korean-Patcher-GUI-1.3-macos-apple-silicon.zip",
+      "asset": "FF2-Korean-Patcher-GUI-1.4-macos-apple-silicon.zip",
       "bundled_smoke": {
         "ok": true,
         "platform": "darwin",
         "tk_version": "8.6.16",
-        "bundled_patch_spans": 100507,
+        "bundled_patch_spans": 100531,
         "iso_selection_autostarts": true,
         "gui_thread_completion": true,
         "source_preserved": true
@@ -41,12 +41,12 @@
       "embedded_patch_sha256_verified": true
     },
     {
-      "asset": "FF2-Korean-Patcher-GUI-1.3-macos-intel.zip",
+      "asset": "FF2-Korean-Patcher-GUI-1.4-macos-intel.zip",
       "bundled_smoke": {
         "ok": true,
         "platform": "darwin",
         "tk_version": "8.6.16",
-        "bundled_patch_spans": 100507,
+        "bundled_patch_spans": 100531,
         "iso_selection_autostarts": true,
         "gui_thread_completion": true,
         "source_preserved": true
@@ -54,12 +54,12 @@
       "embedded_patch_sha256_verified": true
     },
     {
-      "asset": "FF2-Korean-Patcher-GUI-1.3-windows-x64.zip",
+      "asset": "FF2-Korean-Patcher-GUI-1.4-windows-x64.zip",
       "bundled_smoke": {
         "ok": true,
         "platform": "win32",
         "tk_version": "8.6.15",
-        "bundled_patch_spans": 100507,
+        "bundled_patch_spans": 100531,
         "iso_selection_autostarts": true,
         "gui_thread_completion": true,
         "source_preserved": true
@@ -69,9 +69,9 @@
   ],
   "full_iso_check": {
     "source_size": 3231907840,
-    "patch_sha256": "6e6ce3daf7f9b769c71494cf61f2ff0223de38f2ffcd25d852a4d5cf4ea38309",
-    "output_sha256": "76eaa41b996e4055f0bb23efb0f5e3e8274096a5b09b5967bd290807b14d532b",
-    "expected_sha256": "76eaa41b996e4055f0bb23efb0f5e3e8274096a5b09b5967bd290807b14d532b",
+    "patch_sha256": "a76367bab11d341f126fb75069e890fd407922925a45fc26233147400f54634a",
+    "output_sha256": "241989cc367a9369f872c13be187d6cf4120736a7ceb03004258ab0908c170cb",
+    "expected_sha256": "241989cc367a9369f872c13be187d6cf4120736a7ceb03004258ab0908c170cb",
     "ok": true
   }
 }

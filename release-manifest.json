@@ -26,7 +26,7 @@
   },
   "validation": {
     "string_qa_errors": 0,
-    "regression_tests_passed": 49,
+    "regression_tests_passed": 50,
     "runtime_memory_checks_passed": 8,
     "emulator": "PCSX2 2.6.3 macOS",
     "runtime_dialogues_advanced": 22,
@@ -43,12 +43,41 @@
     "gui_safety_tests_passed": 23,
     "ui_supplements_added": 24,
     "uncatalogued_referenced_ui": 0,
-    "new_ui_runtime_verified": false
+    "new_ui_runtime_verified": false,
+    "lesson_dynamic_stat_width_verified": true,
+    "gui_platforms_verified": [
+      "windows-x64",
+      "macos-apple-silicon",
+      "macos-intel"
+    ],
+    "gui_full_iso_result_matches": true
   },
   "changes": [
     "Translate 24 omitted kanji-only or short system strings: lesson profiles/stats, name input/music hints, gallery names, none and completion rate.",
     "Keep v0.9.3 image typesetting and reviewed story text.",
     "Add guarded source supplements and UI pointer-table coverage checks; all-routes playback remains pending."
   ],
-  "patch_hunks": 100531
+  "patch_hunks": 100531,
+  "gui_assets": [
+    {
+      "name": "FF2-Korean-Patcher-GUI-1.4-macos-apple-silicon.zip",
+      "size": 19086365,
+      "sha256": "34c09ff907c990019915288b9642c0eb3e74aae7971b5e57dec4832a0f5442ed"
+    },
+    {
+      "name": "FF2-Korean-Patcher-GUI-1.4-macos-intel.zip",
+      "size": 19747525,
+      "sha256": "4d2b87b6950eaf19988767f215e30e6c0ec7f29c4358da6f0a62119be310c06a"
+    },
+    {
+      "name": "FF2-Korean-Patcher-GUI-1.4-windows-x64.zip",
+      "size": 20339440,
+      "sha256": "7ff102fa85b4ce1f23a13b430d69c1dfa624172394fdb91fec8953073c5b360b"
+    },
+    {
+      "name": "FF2-Korean-Patcher-GUI-1.4-source.zip",
+      "size": 9104955,
+      "sha256": "d5dfeac19ee822f8ff09c6492410c7f1062a925b1c0f67322d9e5f04ec768fcd"
+    }
+  ]
 }

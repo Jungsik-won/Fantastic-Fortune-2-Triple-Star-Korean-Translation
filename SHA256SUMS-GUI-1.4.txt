@@ -1,0 +1,4 @@
+34c09ff907c990019915288b9642c0eb3e74aae7971b5e57dec4832a0f5442ed  FF2-Korean-Patcher-GUI-1.4-macos-apple-silicon.zip
+4d2b87b6950eaf19988767f215e30e6c0ec7f29c4358da6f0a62119be310c06a  FF2-Korean-Patcher-GUI-1.4-macos-intel.zip
+7ff102fa85b4ce1f23a13b430d69c1dfa624172394fdb91fec8953073c5b360b  FF2-Korean-Patcher-GUI-1.4-windows-x64.zip
+d5dfeac19ee822f8ff09c6492410c7f1062a925b1c0f67322d9e5f04ec768fcd  FF2-Korean-Patcher-GUI-1.4-source.zip
